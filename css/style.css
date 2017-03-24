@@ -1,0 +1,68 @@
+/* Header Styles */
+header{
+	display:flex;
+	align-items: center;
+	font-family: Verdana;
+	font-size:14px;
+	font-weight: bold;
+	padding-bottom:10px;
+	border-bottom: 1px solid black;
+	justify-content: space-between;
+}
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo span{
+	color: MediumAquamarine;
+}
+nav{
+	margin-right: 15px;
+}
+nav span a{
+	color: black;
+}
+/* Main Section Styles */
+.main-content{
+	display: flex;
+	border: 1px solid black;
+	justify-content: space-around;
+	margin-top:20px;
+}
+.column{
+	border: 1px solid black;
+	font-family: Georgia;
+	font-size: 17px;
+	color:black;
+}
+.column.large{
+	width: 630px;
+}
+.column.medium{
+	width: 300px;
+}
+.column.small{
+	width: 240px;
+}
+.mother{
+	background-image: url(../images/mother.png);
+	height: 300px;
+}
+.fall{
+	background-image: url(../images/fall.png);
+	height: 300px;
+}
+.camera{
+	background-image: url(../images/camera.png);
+	height:300px;
+}
+.cat{
+	background-image: url(../images/cat.png);
+	height:300px;
+}
+.blurb{
+	font-family:Georgia;
+	font-weight:bold;
+	font-size:30px;
+	color:white;
+}
