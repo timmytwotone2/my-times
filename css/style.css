@@ -1,5 +1,65 @@
+/*I added the top 2 css sections
+one for just styling, the second for positioning*/
+
+/* Universal Styles */
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  font-size: 17px;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/*adding css here that is universal to many divs*/
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.stories .text-content {
+  height: 250px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+
 /* Header Styles */
-header{
+
+header {
 	display:flex;
 	align-items: center;
 	font-family: Verdana;
@@ -9,6 +69,7 @@ header{
 	border-bottom: 1px solid black;
 	justify-content: space-between;
 }
+
 .logo{
 	display: flex;
 	align-items: center;
@@ -22,19 +83,36 @@ nav{
 nav span a{
 	color: black;
 }
+
 /* Main Section Styles */
-.main-content{
+
+/*.main-content{
 	display: flex;
 	border: 1px solid black;
 	justify-content: space-around;
 	margin-top:20px;
+	
+}*/
+
+.main-content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
 }
-.column{
+/*.column{
 	border: 1px solid black;
 	font-family: Georgia;
 	font-size: 17px;
 	color:black;
+}*/
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+  border: 1px solid black;
 }
+
 .column.large{
 	width: 630px;
 }
@@ -65,4 +143,44 @@ nav span a{
 	font-weight:bold;
 	font-size:30px;
 	color:white;
+}
+.news-bites{
+	font-size:16px;
+	font-weight:bold;
+	display: flex;
+	flex-direction: column;
+}
+.news-bites span{
+	background-color: WhiteSmoke;
+	font-family:Verdana;
+	font-size:12px;
+	color:DimGray;
+	padding:5px;
+	border: 1px solid black;
+}
+/* Footer Styles */
+footer{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background-color: MediumAquamarine;
+	margin:auto;
+	font-family:Verdana;
+	font-size:12px;
+	height: 300px;
+}
+footer .title{
+	padding-right:25px;
+	border-right:2px solid white;
+	font-family:Georgia;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+}
+footer nav{
+	display: inline-block;
+	margin-left: 25px;
+}
+footer .copyright{
+	display:block;
 }

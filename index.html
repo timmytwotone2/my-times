@@ -7,7 +7,8 @@
 <body>
   <!-- Header Section -->
   <header>
-    <div class=logo>
+    <!-- I added quotes around logo class -->
+    <div class="logo">
   	<img src="./images/logo.jpg">
   	<span>My Times</span>
   	</div>
@@ -24,33 +25,61 @@
     <!-- Large Left Column -->
   	<div class="column large">
   		<div>
-  			<div class="blurb mother">Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."</div>
+        <!-- added class image content -->
+  			<div class="blurb mother image-content">Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."</div>
   			<p>MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl at augue dapibus dignissim. Nunc condimentum rutrum metus, ac eleifend lacus viverra nec. Proin ultrices egestas diam sed mollis. Nulla sapien massa, dictum vitae est et, pellentesque rutrum risus. Nunc volutpat, metus ac rutrum tempus, orci nisi porttitor dolor, sit amet luctus metus est ut mauris. Quisque vulputate nisl vitae massa rhoncus, at sagittis elit accumsan. Etiam tempus, lorem quis blandit imperdiet, enim dui lobortis tortor, sit amet lobortis arcu ex id odio. Nam fermentum nulla et eros bibendum, sed ullamcorper massa scelerisque. Vestibulum aliquet placerat leo a hendrerit. Nulla non sagittis neque. Nullam sit amet fringilla massa.</p>
   		</div>
-  		<div>
-  		  <h2>Orca Spends Vacation at Land World Puget</h2>
-  		  <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
-  		  <div class="blurb fall">Earth Spins Backwards for 2017</div>
+
+
+<!-- add a parent div here with class stories and then an inner div with class story. you will use story a lot -->
+      <div class="stories">
+        <div class="story">
+      		<div class="text-content">
+      		  <h2>Orca Spends Vacation at Land World Puget</h2>
+      		  <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
+          </div>
+            <!-- added class image content -->
+      		  <div class="blurb fall image-content">Earth Spins Backwards for 2017</div>
   		</div>
+
+    <!-- added div with class story -->
+    <div class="story">
+      <div class="text-content">
   		<div>
   		  <h2>Burger for Breakfast: How Early is too Early?</h2>
   		  <p>Mew York, MYâInterdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
-  		  <div class="blurb camera">Research Shows Cameras Erase Memory</div>
+      </div>
+      <!-- added class image content -->
+  		  <div class="blurb camera image-content ">Research Shows Cameras Erase Memory
+        </div>
   		</div>
   	</div>
+    </div>
+    <!-- added closing div tag here for column large -->
+</div>
+
   	<!-- Medium Middle Column -->
   	<div class="column medium">
-  		<div>
+     <!--  made this a story-classed div also -->
+      <div class="story">
+        <div class="text-content">
   			<h2>FBI Finds Action Star Guilty of False Advertising</h2>
   			<p>WASHINGTON DC- Donec luctus sem augue, rutrum posuere orci aliquam sed. Nam vitae aliquam lectus. Sed tempor tortor est, nec sagittis eros tincidunt sed. Morbi venenatis condimentum sem, vitae sollicitudin turpis pulvinar eget. Morbi pellentesque consectetur mi id auctor. Phasellus tincidunt orci mauris, placerat pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras condimentum augue ut ante sollicitudin interdum. Pellentesque cursus dolor at tincidunt cursus. Vestibulum blandit aliquam felis...</p>
   		</div>
-  		<div class="blurb cat">
-  			Cats in Control-Is It a Thing?
-  		</div>
-  		<div>
-  			<p>BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla scelerisque sollicitudin lobortis, dui est sodales sapien, a vestibulum velit diam eget felis. Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.</p>
-  		</div>
+    </div>
+
+<!-- same here -->
+    <div class="story">
+        <!-- added class image-content -->
+      		<div class="blurb cat image-content">
+      			Cats in Control-Is It a Thing?
+      		</div>
+      		<div>
+      			<p>BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla scelerisque sollicitudin lobortis, dui est sodales sapien, a vestibulum velit diam eget felis. Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.</p>
+      		</div>
+    </div>
   	</div>
+
   	<!-- Small Right Column -->
   	<div class="column small">
   		<div>
@@ -58,11 +87,32 @@
   		</div>
   		<div>
   			<h2>NEWS BITES</h2>
-  			<p>Cat Emoji Goes Viral Buy Youtube Views Home Business Advertising Ideas Advertising Internet Online Illustration in Marketing Materials Finally a Top Secret Way You Can</p>
+  		  <div class=news-bites>
+          <span>Cat Emoji Goes Viral</span>
+          <span>Buy Youtube Views</span>
+          <span>Home Business Advertising Ideas</span>
+          <span>Advertising Internet Online</span>
+          <span>Illustration in Marketing Materials</span>
+          <span>Finally a Top Secret Way You Can</span>
+        </div>
   		</div>
   	</div>
   </section>
-
+  <!-- footer Section -->
+  <footer>
+    <div class="info">
+      <span class="title">MY Times</span>
+      <nav>
+        <a href="#">World</a>
+        <a href="#">U.S.</a>
+        <a href="#">Tech</a>
+        <a href="#">Science</a>
+      </nav>
+    </div>
+    <div class="copyright">
+      <p>&copy 2016, My Times (A Division of Codeacademy bite)</p>
+    </div>
+  </footer>
 
 </body>
 </html>
